@@ -72,7 +72,7 @@ sudo reboot
 	```
 	  
 	  
-	  开发者还可以通过一些编译选项打开或关闭相应的功能模块。例如，用以下命令编译出的固件关闭了debug log和二维码等功能,减小了code size。
+ 开发者还可以通过一些编译选项打开或关闭相应的功能模块。例如，用以下命令编译出的固件关闭了debug log和二维码等功能,减小了code size。
 	 
 
 	```bash
@@ -86,7 +86,8 @@ sudo reboot
 	enable_openthread_cli=false"	
 	``` 
   
-  
+
+
 ##烧录固件
 
  编译完成后，固件会生成在connectedhomeip/out/lighting-app/BRD4186A文件夹下。使用[Simplicity Studio](https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-building-and-flashing/flashing)将chip-efr32-lighting-example.s37文件和bootloader文件烧录到wstk板上，开发者可以通过Simplicity Studio编译bootloader固件，也可以直接使用pre-build bootloader固件。pre-build bootloader固件可以在connectedhomeip/third_party/efr32_sdk/repo/platform/bootloader/sample-apps/bootloader-storage-spiflash-single文件夹下找到。
