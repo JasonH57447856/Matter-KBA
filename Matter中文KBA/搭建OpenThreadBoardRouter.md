@@ -40,15 +40,16 @@
 - 远程登录后，在树莓派上更新和安装依赖软件包
 
   ```bash
-sudo apt update
-sudo apt upgrade -y
-sudo apt install -y git vim gcc g++ python-is-python3 python3 python3-venv python3-pip \
-unzip pi-bluetooth avahi-daemon libavahi-client-dev libssl-dev libglib2.0-dev \
-ninja-build git build-essential protobuf-compiler wpasupplicant wireless-tools rfkill \
-libgirepository1.0-dev libcairo2-dev pkg-config python3-dev net-tools \
-python3-widgetsnbextension python3-testresources linux-modules-extra-raspi
-pip3 install pycairo
+	sudo apt update
+	sudo apt upgrade -y
+	sudo apt install -y git vim gcc g++ python-is-python3 python3 python3-venv python3-pip \
+	unzip pi-bluetooth avahi-daemon libavahi-client-dev libssl-dev libglib2.0-dev \
+	ninja-build git build-essential protobuf-compiler wpasupplicant wireless-tools rfkill \
+	libgirepository1.0-dev libcairo2-dev pkg-config python3-dev net-tools \
+	python3-widgetsnbextension python3-testresources linux-modules-extra-raspi
+	pip3 install pycairo
   ```
+  
 - 重启树莓派
  
   ```bash
@@ -127,18 +128,20 @@ pip3 install pycairo
     - SSH远程登录到树莓片
     - 输入以下命令建立Thread网络
 
- 	  ```bash
-sudo ot-ctl factoryreset 
-sudo ot-ctl dataset init new
-sudo ot-ctl dataset networkkey 00112233445566778899aabbccddeeff
-sudo ot-ctl dataset extpanid 1111111122222222
-sudo ot-ctl dataset panid 0x1234
-sudo ot-ctl dataset channel 15
-sudo ot-ctl dataset commit active
-sudo ot-ctl ifconfig up
-sudo ot-ctl thread start
-  ```
+	```bash
+	sudo ot-ctl factoryreset 
+	sudo ot-ctl dataset init new
+	sudo ot-ctl dataset networkkey 00112233445566778899aabbccddeeff
+	sudo ot-ctl dataset extpanid 1111111122222222
+	sudo ot-ctl dataset panid 0x1234
+	sudo ot-ctl dataset channel 15
+	sudo ot-ctl dataset commit active
+	sudo ot-ctl ifconfig up
+	sudo ot-ctl thread start
+	```
+  
  - Thread网络建立成功后，树莓派会自动创建Thread网络接口wpan0。 Open Thread Board Router搭建完毕。
+ 
     ![wpan0](docs/wpan0.png)	
  	
  	
