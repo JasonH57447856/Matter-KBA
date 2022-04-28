@@ -22,7 +22,8 @@
 
 ## Matter项目编译
 
-- [编译Matter Lighting Example](基础篇/编译Matter Lighting example.md)
+- [编译Matter Lighting Example](../Matter中文KBA/基础篇/编译Matter Lighting example.md)
+- [chip-tool documentation](../../chip-tool/README.md) 
 - [搭建Open Thread Board Router](基础篇/搭建Open Thread Board Router.md)
 - [编译Matter Controller](基础篇/编译Matter Controller.md)
 
