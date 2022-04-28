@@ -24,9 +24,9 @@
 	sudo apt update
 	sudo apt upgrade -y
 	sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \
-libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
-python3-pip unzip libgirepository1.0-dev libcairo2-dev
-sudo reboot
+	libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
+	python3-pip unzip libgirepository1.0-dev libcairo2-dev
+   sudo reboot
   ```
   
 ##编译Lighting固件
