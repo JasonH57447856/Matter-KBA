@@ -56,7 +56,7 @@
    ./scripts/examples/gn_build_example.sh examples/chip-tool out/standalone 
   ```
   
-编译完成后，可执行文件将会在生成在out/standalone文件夹下。
+  编译完成后，可执行文件将会在生成在out/standalone文件夹下。
 
 	  
   

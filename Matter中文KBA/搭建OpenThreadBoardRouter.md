@@ -24,14 +24,18 @@
 ## 搭建树莓派编译环境
 
  - 电脑上使用[Raspberry Pi Imager工具](https://www.raspberrypi.com/software/)将Ubuntu Server 21.10  64 bits系统安装到SD卡上。该image可以按照如下步骤找到：CHOOSE OS -	> Other general-purpose OS -> Ubuntu 
+ 
    ![ubuntu](docs/ubuntu.png)
 
 - 系统安装完毕后将SD卡插回树莓派中，并通过网线将树莓派连接到与电脑同一个局域网中。
 -  通过SSH远程登录到树莓派上。
 	-  windows用户可以使用[putty](https://www.ssh.com/academy/ssh/putty)或其他工具登陆到树莓派。
-	-  Linux,Mac用户可以通过命令  ```
+	-  Linux,Mac用户可以通过如下命令登陆到树莓派。192.168.1.18 为树莓派的ip地址。ubuntu为用户名，默认密码也是ubuntu。
+	
+   ```bash
 	ssh ubuntu@192.168.1.18 
-  ```登陆到树莓派，192.168.1.18 为树莓派的ip地址。ubuntu为用户名，默认密码也是ubuntu。
+   ```
+
   
 - 远程登录后，在树莓派上更新和安装依赖软件包
 
@@ -46,23 +50,25 @@ python3-widgetsnbextension python3-testresources linux-modules-extra-raspi
 pip3 install pycairo
   ```
 - 重启树莓派
-
+ 
   ```bash
-sudo reboot
+  sudo reboot
   ```
+
 
 ## 编译安装OTBR
 - 克隆OTBR SDK
 
-
   ```bash
-git clone https://github.com/openthread/ot-br-posix
+   git clone https://github.com/openthread/ot-br-posix
   ```
+  
 - 进入ot-br-posix目录
 
   ```bash
 	cd ot-br-posix
   ```
+  
 - Checkout一个稳定的版本，例如：72bb3d456
 
   ```bash
@@ -73,6 +79,7 @@ git clone https://github.com/openthread/ot-br-posix
   ```bash
 	git submodule update --init
   ```
+  
 - 安装OTBR依赖的软件包
 
   ```bash
@@ -82,7 +89,7 @@ git clone https://github.com/openthread/ot-br-posix
 - 编译安装OTBR
 
   ```bash
-sudo BACKBONE_ROUTER=1 INFRA_IF_NAME=eth0 ./script/setup
+   sudo BACKBONE_ROUTER=1 INFRA_IF_NAME=eth0 ./script/setup
   ```
   
   eth0为树莓派网络接口的名称，如果树莓派是通过wifi连接到局域网，则需要将eth0改为wlan0.
@@ -91,16 +98,16 @@ sudo BACKBONE_ROUTER=1 INFRA_IF_NAME=eth0 ./script/setup
 - 修改OTBR\_AGENT\_OPTS
 
   ```bash
-sudo nano /etc/default/otbr-agent
+   sudo nano /etc/default/otbr-agent
   ``` 
   
   将/etc/default/otbr-agent文件中的OTBR\_AGENT\_OPTS替换为
   
    ```bash
-OTBR_AGENT_OPTS="-I wpan0 -B eth0 spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800 trel://eth0"
+    OTBR_AGENT_OPTS="-I wpan0 -B eth0 spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800 trel://eth0"
   ``` 
   
-    eth0为树莓派网络接口的名称，如果树莓派是通过wifi连接到局域网，则需要将eth0改为wlan0.
+   eth0为树莓派网络接口的名称，如果树莓派是通过wifi连接到局域网，则需要将eth0改为wlan0.
 
  
 - 重启树莓派后，OTBR就能正常工作了
