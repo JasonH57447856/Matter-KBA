@@ -77,14 +77,14 @@ sudo reboot
 	  
 	  
 	```bash
-		./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32 ./out/lighting-app BRD4186A "chip_detail_logging=false \
-		chip_automation_logging=false \
-		chip_progress_logging=false \
-		is_debug=false \
-		show_qr_code=false \
-		chip_build_libshell=false \
-		chip_openthread_ftd=false \
-		enable_openthread_cli=false"	
+	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32 ./out/lighting-app BRD4186A "chip_detail_logging=false \
+	chip_automation_logging=false \
+	chip_progress_logging=false \
+	is_debug=false \
+	show_qr_code=false \
+	chip_build_libshell=false \
+	chip_openthread_ftd=false \
+	enable_openthread_cli=false"	
 	``` 
   
   
