@@ -22,9 +22,9 @@
 
 ## Matter项目编译
 
-- [编译Matter Lighting Example](编译Matter Lighting example.md)
-- [搭建Open Thread Board Router](搭建Open Thread Board Router.md)
-- [编译Matter Controller](编译Matter Controller.md)
+- [编译Matter Lighting Example](基础篇/编译Matter Lighting example.md)
+- [搭建Open Thread Board Router](基础篇/搭建Open Thread Board Router.md)
+- [编译Matter Controller](基础篇/编译Matter Controller.md)
 
 
 
