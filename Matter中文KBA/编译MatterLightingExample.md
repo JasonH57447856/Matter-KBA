@@ -70,7 +70,9 @@ sudo reboot
 	  ```bash
 	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32/ ./out/lighting-app BRD4186A
 	  ```
+	  
 	  开发者还可以通过一些编译选项打开或关闭相应的功能模块。例如，用以下命令编译出的固件关闭了debug log和二维码等功能,减小了code size。
+	  
 	  
 	  ```bash
 	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32 ./out/lighting-app BRD4186A "chip_detail_logging=false \
@@ -81,7 +83,7 @@ sudo reboot
 	chip_build_libshell=false \
 	chip_openthread_ftd=false \
 	enable_openthread_cli=false"	
-    
+   ```  
   
   
 ##烧录固件
