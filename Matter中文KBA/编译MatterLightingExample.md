@@ -67,23 +67,25 @@ sudo reboot
 
 	输入如下命令编译固件。BRD4186A为radio板的型号，更多支持的型号请参考：[https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/efr32](https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/efr32)
 	
-	  ```bash
+	```bash
 	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32/ ./out/lighting-app BRD4186A
-	  ```
+	```
+	  
 	  
 	  开发者还可以通过一些编译选项打开或关闭相应的功能模块。例如，用以下命令编译出的固件关闭了debug log和二维码等功能,减小了code size。
+	 
 	  
 	  
-	  ```bash
-	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32 ./out/lighting-app BRD4186A "chip_detail_logging=false \
-	chip_automation_logging=false \
-	chip_progress_logging=false \
-	is_debug=false \
-	show_qr_code=false \
-	chip_build_libshell=false \
-	chip_openthread_ftd=false \
-	enable_openthread_cli=false"	
-   ```  
+	```bash
+		./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32 ./out/lighting-app BRD4186A "chip_detail_logging=false \
+		chip_automation_logging=false \
+		chip_progress_logging=false \
+		is_debug=false \
+		show_qr_code=false \
+		chip_build_libshell=false \
+		chip_openthread_ftd=false \
+		enable_openthread_cli=false"	
+	``` 
   
   
 ##烧录固件
