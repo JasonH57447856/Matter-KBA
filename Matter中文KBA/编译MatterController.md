@@ -5,7 +5,7 @@
 )是可以运行在手机上app，可以通过扫描matter设备上的二维码将设备加入到网络中, 并通过用户界面控制Matter设备。
 [POSIX CLI chip-tool](https://github.com/project-chip/connectedhomeip/tree/master/examples/chip-tool
 )是一个可以运行在linux系统上的命令行工具，通过执行命令行来实现入网，控制等功能。
-[Python chip-device-ctrll](https://github.com/project-chip/connectedhomeip/tree/master/src/controller/python)是基于pytho实现的命令行工具，功能与POSIX CLI chip-tool类似。用户可以根据项目需要，选择任意一种Matter Controller。本文将介绍如何在电脑和树莓派(OTBR)上编译POSIX CLI chip-tool。
+[Python chip-device-ctrll](https://github.com/project-chip/connectedhomeip/tree/master/src/controller/python)是基于python实现的命令行工具，功能与POSIX CLI chip-tool类似。用户可以根据项目需要，选择任意一种Matter Controller。本文将介绍如何在电脑和树莓派(OTBR)上编译POSIX CLI chip-tool。
 
 
 ## 硬件需求
