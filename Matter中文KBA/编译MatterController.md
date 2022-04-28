@@ -13,7 +13,7 @@
 
 
 ## 搭建端编译环境
-参考[编译Matter Lighting Example](编译MatterLightingExample.md)搭建电脑端编译环境，或者参考[搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md)搭建树莓派编译环境。
+参考[编译Matter Lighting Example](编译MatterLightingExample.md##搭建电脑端编译环境)搭建电脑端编译环境，或者参考[搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md#搭建树莓派编译环境)搭建树莓派编译环境。
 
   
 ##编译POSIX CLI chip-tool
