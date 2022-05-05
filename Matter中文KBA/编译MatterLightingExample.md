@@ -42,10 +42,10 @@
   ```bash
 	cd connectedhomeip
   ```
-- Checkout一个稳定的版本，例如：b0af6ba42b6ce494748f18ecf3e054a400b8f45b
+- Checkout一个稳定的版本，例如：cfc35951be66a664a6efdadea56d1b8ea6e63e96
 
   ```bash
-	git checkout b0af6ba42b6ce494748f18ecf3e054a400b8f45b
+	git checkout cfc35951be66a664a6efdadea56d1b8ea6e63e96
   ```
 - 更新submodule
 

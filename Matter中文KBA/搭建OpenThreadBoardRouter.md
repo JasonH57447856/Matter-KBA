@@ -70,10 +70,10 @@
 	cd ot-br-posix
   ```
   
-- Checkout一个稳定的版本，例如：72bb3d456
+- Checkout一个稳定的版本，例如：f0bd216
 
   ```bash
-	git checkout 72bb3d456
+	git checkout f0bd216
   ```
 - 更新submodule
 

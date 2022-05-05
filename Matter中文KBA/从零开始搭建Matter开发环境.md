@@ -29,8 +29,11 @@
 
 
 ## 实验
-- 使用安装在OTBR上的Matter Controller控制Matter Lighting设备
--  使用安装在电脑上的Matter Controller控制Matter Lighting设备
+- [通过安装在OTBR上的Matter Controller控制Matter Lighting设备] (通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+
+- [通过安装在电脑上的Matter Controller控制Matter Lighting设备] (通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+
+
 - OTA实验
 
 
