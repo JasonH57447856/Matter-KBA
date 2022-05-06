@@ -34,7 +34,8 @@
 - [通过安装在电脑上的Matter Controller控制Matter Lighting设备] (通过安装在OTBR上的MatterController控制MatterLighting设备.md)
 
 
-- OTA实验
+- [OTA实验 - 外部Flash] (OTA实验-外部Flash.md)
+- OTA实验 - 内部Flash
 - 灯和开关设备的绑定实验
 
 
