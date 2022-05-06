@@ -6,6 +6,7 @@
 ## Matter网络拓扑介绍
 
 在Matter网络中，一般有三类设备是必须。分别是Matter Device，Matter Controller，OpenThread Board Router。
+
 ![Image](docs/matter_topology.png)
 
 1. **Matter device**
