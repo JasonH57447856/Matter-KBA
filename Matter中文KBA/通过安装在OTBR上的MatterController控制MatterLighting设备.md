@@ -66,6 +66,7 @@
   ```bash
 ./chip-tool onoff toggle 1234 1
   ```  
+ 
 - Matter Lighting设备收到toggle命令后，WSTK板上的LED1的状态会翻转。
  
 
