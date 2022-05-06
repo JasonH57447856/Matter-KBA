@@ -1,57 +1,19 @@
-# 实验：通过安装在电脑上的Matter Controller控制Matter Lighting设备
+# 实验：通过安装在OTBR上的Matter Controller控制Matter Lighting设备
 
-本实验介绍如何通过电脑上的Matter Controller控制Matter Lighting设备。
+本实验介绍如何通过树莓派(OTBR)上的Matter Controller控制Matter Lighting设备。
 
 
 ## 实验准备
 - 参考[编译Matter Lighting Example](编译MatterLightingExample.md)准备Matter Light设备
 - 参考[搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md)在树莓派上搭建OTBR
-- 参考[编译Matter Controller](编译MatterController.md)在电脑上编译Matter Controller
-- 在OTBR上安装配置RADVD服务，解决电脑到Matter Device的ipv6路由问题。
-	- 安装RADVD
-	
-    ```bash
-    sudo apt update
-    sudo apt install radvd
-    ```
- - 创建  /etc/radvd.conf 配置文件
+- 参考[编译Matter Controller](编译MatterController.md)在树莓派(OTBR)上编译Matter Controller
 
-  ```bash
-  sudo nano /etc/radvd.conf
-  ```
-
-  - 将以下内容保存在/etc/radvd.conf文件
-
-  ```
-  interface eth0 {
-  AdvManagedFlag on;
-  AdvSendAdvert on;
-  MinRtrAdvInterval 30;
-  MaxRtrAdvInterval 60;
-  prefix fd11:33::1/64 {
-      AdvOnLink on;
-      AdvAutonomous on;
-      AdvRouterAddr on;
-      };
-  };
-  ```
- - 运行 radvd service
-
-  ```bash
-  sudo systemctl restart radvd
-  ```
- - 重启树莓派
-
-  ```bash
-	sudo reboot
-  ```
-
-## 通过电脑上的Matter Controller控制Matter Lighting设备
+## 通过树莓派(OTBR)上的Matter Controller控制Matter Lighting设备
 - SSH远程登录到OTBR
 - 并输入以下命令获取Thread网络信息(operational dataset)
 
   ```bash
-  git clone https://github.com/project-chip/connectedhomeip
+  sudo ot-ctl dataset active -x
   ```
   ![Image](docs/dataset.png)
 - 进入Matter Controller文件夹，输入pairing命令“chip-tool pairing ble-thread (node id) hex:(operational dataset) (pin code) (discriminator)”将Matter Lighting设备加入到网络中。其中node id为Matter设备的节点ID，这里可以分配任意ID给Matter设备。operational dataset可以从上一步获取。pin code为默认值20202021，discriminator为默认值3840。
@@ -64,8 +26,17 @@
 - Commissioning成功后，发送toggle命令控制Matter Lighting设备。1214为入网时分配的node id，1为endpoint id。
 
   ```bash
-./chip-tool onoff toggle 1234 1
+  ./chip-tool onoff toggle 1234 1
   ```  
+ 
 - Matter Lighting设备收到toggle命令后，WSTK板上的LED1的状态会翻转。
  
+##注意事项
+设备多次入网时，需要分配不同的node id， 否则会出现入网失败的问题。也可以通过以下命令清除chip tool的缓存。
 
+  ```bash
+  cd connectedhomeip
+  rm -r /tmp/chip_*
+  ```  
+  
+  
