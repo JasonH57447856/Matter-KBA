@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 从零开始搭建Matter开发环境
 
 由于Matter SDK目前处于开发阶段，还没有集成到[Simplicity Studio](https://www.silabs.com/developers/simplicity-studio) 中。开发者如果想在现阶段进行Matter设备的开发只能手动搭建开发环境。本文将介绍如何从零开始搭建Matter开发环境。
@@ -75,10 +75,8 @@
 ## 实验
 - [通过安装在OTBR上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
 - [通过安装在电脑上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
-- [OTA实验 - 外部Flash] (OTA实验-外部Flash.md)
-- OTA实验 - 内部Flash
+- [OTA实验 - 外部Flash](OTA实验-外部Flash.md)
+- [OTA实验 - 内部Flash](OTA实验-内部Flash.md) 
 - 灯和开关设备的绑定实验
 
 
-
->>>>>>> 6cd64e6fc23010c9831bc609fad74bd389628548
