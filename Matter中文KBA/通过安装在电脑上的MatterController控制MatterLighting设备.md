@@ -64,8 +64,9 @@
 - Commissioning成功后，发送toggle命令控制Matter Lighting设备。1214为入网时分配的node id，1为endpoint id。
 
   ```bash
-./chip-tool onoff toggle 1234 1
+  ./chip-tool onoff toggle 1234 1
   ```  
+
 - Matter Lighting设备收到toggle命令后，WSTK板上的LED1的状态会翻转。
  
 
