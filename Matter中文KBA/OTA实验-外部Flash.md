@@ -42,7 +42,7 @@
  
  - 将chip-efr32-lighting-example-v9.ota文件拷贝到OTBR的/connectedhomeip文件夹下
     
-##实验步骤
+## 实验步骤
 
 - 在树莓派上启动OTA Provider
 
@@ -72,8 +72,10 @@
     ```
     
 - Matter设备收到announce-ota-provider命令后向OTA Provider请求固件。
-     
-##注意事项
+
+
+## 注意事项
+
 OTA Provider和Matter设备多次入网时，需要分配不同的node id， 否则会出现入网失败的问题。
 也可以通过以下命令清除chip tool的缓存。清除缓存后，OTA Provider和Matter设备需要重新入网。
 
