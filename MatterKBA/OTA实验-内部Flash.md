@@ -106,6 +106,9 @@
     cd connectedhomeip/out/standalone/
     ./chip-tool pairing onnetwork 5678 20202021
     ```
+
+- 授予网络中所有设备操作OTA Provider cluster (0x0029) 的权限。5678为OTA Provider的node id，后面的0为endpoint。
+
     
     ```bash
     ./chip-tool accesscontrol write acl '[{"fabricIndex": 1, "privilege": 5, "authMode": 2, "subjects": [112233], "targets": null}, {"fabricIndex": 1, "privilege": 3, "authMode": 2, "subjects": null, "targets": null}]' 5678 0
