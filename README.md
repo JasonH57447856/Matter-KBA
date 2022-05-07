@@ -25,19 +25,19 @@
 ## Matter项目编译
 
 - [编译Matter Lighting Example](MatterKBA/编译MatterLightingExample.md)
-- [搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md)
-- [编译Matter Controller](编译MatterController.md)
+- [搭建Open Thread Board Router](MatterKBA/搭建OpenThreadBoardRouter.md)
+- [编译Matter Controller](MatterKBA/编译MatterController.md)
 
 
 
 ## 实验
-- [通过安装在OTBR上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+- [通过安装在OTBR上的Matter Controller控制Matter Lighting设备](MatterKBA/通过安装在OTBR上的MatterController控制MatterLighting设备.md)
 
-- [通过安装在电脑上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+- [通过安装在电脑上的Matter Controller控制Matter Lighting设备](MatterKBA/通过安装在OTBR上的MatterController控制MatterLighting设备.md)
 
 
-- [OTA实验 - 外部Flash](OTA实验-外部Flash.md)
-- [OTA实验 - 内部Flash](OTA实验-内部Flash.md)
+- [OTA实验 - 外部Flash](MatterKBA/OTA实验-外部Flash.md)
+- [OTA实验 - 内部Flash](MatterKBA/OTA实验-内部Flash.md)
 - 灯和开关设备的绑定实验
 
 
