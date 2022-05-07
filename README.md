@@ -24,7 +24,7 @@
 
 ## Matter项目编译
 
-- [编译Matter Lighting Example](编译MatterLightingExample.md)
+- [编译Matter Lighting Example](MatterKBA/编译MatterLightingExample.md)
 - [搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md)
 - [编译Matter Controller](编译MatterController.md)
 
