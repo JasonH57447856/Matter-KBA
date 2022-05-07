@@ -124,7 +124,7 @@
  在浏览器上输入树莓派的IP地址回登陆到Thread网络管理界面，点击Form按钮建立Thread网络。
     ![form](docs/form.png)
 
- - 还通过命令行建立Thread网络
+ - 或者通过命令行建立Thread网络
     - SSH远程登录到树莓片
     - 输入以下命令建立Thread网络
 
