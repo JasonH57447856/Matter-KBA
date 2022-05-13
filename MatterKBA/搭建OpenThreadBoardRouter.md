@@ -145,4 +145,11 @@
  
     ![wpan0](docs/wpan0.png)	
  	
- 	
+	
+ ## 查看OTBR的运行日志
+ 
+  ```bash
+  tail -f /var/log/syslog
+  ```
+   
+
