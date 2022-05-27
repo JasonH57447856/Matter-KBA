@@ -23,7 +23,7 @@
 
 ## 搭建树莓派编译环境
 
- - 电脑上使用[Raspberry Pi Imager工具](https://www.raspberrypi.com/software/)将Ubuntu Server 21.10  64 bits系统安装到SD卡上。该image可以按照如下步骤找到：CHOOSE OS -	> Other general-purpose OS -> Ubuntu。或者下载离线[Ubuntu Server 21.10  64 bits系统](https://cdimage.ubuntu.com/releases/21.10/release/)手动安装。
+ - 电脑上使用[Raspberry Pi Imager工具](https://www.raspberrypi.com/software/)将Ubuntu Server 21.10  64 bits系统安装到SD卡上。该image可以按照如下步骤找到：CHOOSE OS -	> Other general-purpose OS -> Ubuntu。或者下载离线[Ubuntu Server 21.10  64 bits系统](https://cdimage.ubuntu.com/releases/21.10/release/ubuntu-21.10-preinstalled-server-arm64+raspi.img.xz)手动安装。
  
    ![ubuntu](docs/ubuntu.png)
 
