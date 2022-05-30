@@ -101,5 +101,5 @@
 
 ## 修改按键和led灯的GPIO
 
-可以通过修改connectedhomeip/third_party/efr32_sdk/repo/matter/efr32/efr32mg24/BRD4186A文件夹下相应的的配置文件来修改案件或led灯的gpio，例如sl_simple_led_led1_config.h为led1的配置文件。
+可以通过修改connectedhomeip/third_party/efr32_sdk/repo/matter/efr32/efr32mg24/BRD4186A文件夹下相应的的配置文件来修改按键或led灯的gpio，例如sl_simple_led_led1_config.h为led1的配置文件。
 
