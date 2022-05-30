@@ -31,7 +31,7 @@
  
 - Matter Lighting设备收到toggle命令后，WSTK板上的LED1的状态会翻转。
  
-##注意事项
+## 注意事项
 设备多次入网时，需要分配不同的node id， 否则会出现入网失败的问题。也可以通过以下命令清除chip tool的缓存。
 
   ```bash
