@@ -38,6 +38,5 @@
 
 - [OTA实验 - 外部Flash](MatterKBA/OTA实验-外部Flash.md)
 - [OTA实验 - 内部Flash](MatterKBA/OTA实验-内部Flash.md)
-- 灯和开关设备的绑定实验
 - [在Matter中添加Cluster](MatterKBA/)
 
