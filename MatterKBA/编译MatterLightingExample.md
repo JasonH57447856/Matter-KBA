@@ -17,7 +17,7 @@
 - 安装VirtualBox和Ubuntu 20.04 LTS
   - [VirtualBox](https://www.virtualbox.org/)
   - [Ubuntu 20.04.x LTS](https://ubuntu.com/download/desktop)
-- 安装Simplicity Studio V5（https://www.silabs.com/developers/simplicity-studio)并将Commander加入到环境变量。
+- 安装Simplicity Studio V5（https://www.silabs.com/developers/simplicity-studio) 并将Commander加入到环境变量。
   - 将commander的安装路径加入到/etc/profile文件的最后一行，例如：
    ```bash
    export PATH=$PATH:/home/jason/SimplicityStudio_v5/developer/adapter_packs/commander
