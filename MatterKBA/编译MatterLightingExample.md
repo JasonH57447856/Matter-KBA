@@ -20,7 +20,7 @@
 - 安装Simplicity Studio V5（https://www.silabs.com/developers/simplicity-studio) 并将Commander加入到环境变量。
   - 将commander的安装路径加入到/etc/profile文件的最后一行，例如：
    ```bash
-   export PATH=$PATH:/home/jason/SimplicityStudio_v5/developer/adapter_packs/commander
+   export PATH=$PATH:/home/SimplicityStudio_v5/developer/adapter_packs/commander
    ``` 
    成功安装Commander后，编译Matter EFR32固件会自动生成.ota文件，可用于OTA升级。
 - 在Ubuntu上更新和安装依赖软件包
