@@ -52,7 +52,7 @@
     ![Image](docs/net.png)
 -  输入```ifconfig  ```检查虚拟机网口是否被分配了ipv6地址。如图所示，虚拟机已经获取了前缀为fd11:33的ipv6地址。
 
- ![Image](docs/enp0.png)
+    ![Image](docs/enp0.png)
 
 - SSH远程登录到OTBR
 - 并输入以下命令获取Thread网络信息(operational dataset)
