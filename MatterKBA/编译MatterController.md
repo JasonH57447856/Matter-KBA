@@ -29,10 +29,10 @@
   ```bash
 	cd connectedhomeip
   ```
-- Checkout一个稳定的版本，例如：cfc35951be66a664a6efdadea56d1b8ea6e63e96
+- Checkout一个稳定的版本，例如sve branch：333fa10187d34ed1209cddd6c1fe40d55968a93a
 
   ```bash
-	git checkout cfc35951be66a664a6efdadea56d1b8ea6e63e96
+	git checkout 333fa10187d34ed1209cddd6c1fe40d55968a93a
   ```
 - 更新submodule
 

@@ -1,6 +1,6 @@
-# 编译Matter Lighting Example 
+# 编译Matter Thread Lighting Example
 
-本文将介绍如何从零开始编译基于Silicon Labs EFR32 平台的Matter Lighting Example。
+本文将介绍如何从零开始编译基于Silicon Labs EFR32 平台的Matter Thread Lighting Example。
 
 
 ## 硬件需求
@@ -47,10 +47,10 @@
   ```bash
 	cd connectedhomeip
   ```
-- Checkout一个稳定的版本，例如：cfc35951be66a664a6efdadea56d1b8ea6e63e96
+- Checkout一个稳定的版本，例如sve branch：333fa10187d34ed1209cddd6c1fe40d55968a93a
 
   ```bash
-	git checkout cfc35951be66a664a6efdadea56d1b8ea6e63e96
+	git checkout 333fa10187d34ed1209cddd6c1fe40d55968a93a
   ```
 - 更新submodule
 
@@ -104,7 +104,40 @@
  
   ![Image](docs/wstk.png)
 
+## 功能介绍
+
+**LCD**: 显示设备二维码，手机App可通过扫描二维码将设备加入Matter网络。
+
+**LED0**: 指示设备的连接状态。
+
+- 50ms开950ms关：设备处于未入网状态
+- 100ms开100ms关：设备正在做commissioning
+- 950ms开50ms关：commissioning成功
+
+**LED1**: 指示灯的状态。
+
+- 关：灯处于关闭状况
+- 开：灯处于打开状态
+
+**Button0**: 
+
+- 短按：使BLE advertisement 处于 fast mode，30秒后退出fast mode。
+- 长按：使设备恢复出厂设置。注意：长按Button0后LED0和LED1会同时闪烁，闪烁结束后松开Button0才能将设备成功恢复出厂设置。
+
+**Button1**: 
+
+- 短按：切换灯的开关状态。
+
+
+通过Chip Tool发送如下命令也可以切换灯的开关状态。1为灯设备的Endpoint。详细步骤请参考[通过安装在OTBR上的Matter Controller控制Matter Lighting设备](MatterKBA/通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+
+  ```bash
+	chip-tool onoff on NodeID 1
+	chip-tool onoff off NodeID 1
+	chip-tool onoff toggle NodeID 1
+  ```
+  
 ## 修改按键和led灯的GPIO
 
-可以通过修改connectedhomeip/third_party/efr32_sdk/repo/matter/efr32/efr32mg24/BRD4186A文件夹下相应的的配置文件来修改按键或led灯的gpio，例如sl_simple_led_led1_config.h为led1的配置文件。
+可以通过修改connectedhomeip/third_party/silabs/matter_support/matter/efr32/efr32mg24/BRD4186A/config文件夹下相应的的配置文件来修改按键或led灯的gpio，例如sl_simple_led_led1_config.h为led1的配置文件。
 
