@@ -4,7 +4,7 @@
 
 
 ## 实验准备
-- 参考[编译Matter Lighting Example](编译MatterThreadLightingExample.md)准备Matter Light设备
+- 参考[编译Matter Thread Lighting Example](编译MatterThreadLightingExample.md)准备Matter Light设备
 - 参考[搭建Open Thread Board Router](搭建OpenThreadBoardRouter.md)在树莓派上搭建OTBR
 - 参考[编译Matter Controller](编译MatterController.md)在树莓派(OTBR)上编译Matter Controller
 
