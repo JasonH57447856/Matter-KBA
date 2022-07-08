@@ -129,7 +129,7 @@
 - 短按：切换灯的开关状态。
 
 
-通过Chip Tool发送如下命令也可以切换灯的开关状态。1为灯设备的Endpoint。详细步骤请参考[通过安装在OTBR上的Matter Controller控制Matter Lighting设备](MatterKBA/通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+通过Chip Tool发送如下命令也可以切换灯的开关状态。1为灯设备的Endpoint。详细步骤请参考[通过安装在OTBR上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
 
   ```bash
 	chip-tool onoff on NodeID 1
