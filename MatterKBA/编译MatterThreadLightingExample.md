@@ -19,9 +19,11 @@
   - [Ubuntu 20.04.x LTS](https://ubuntu.com/download/desktop)
 - 安装Simplicity Studio V5（https://www.silabs.com/developers/simplicity-studio) 并将Commander加入到环境变量。
   - 将commander的安装路径加入到/etc/profile文件的最后一行，例如：
+  
    ```bash
    export PATH=$PATH:/home/SimplicityStudio_v5/developer/adapter_packs/commander
    ``` 
+   
    成功安装Commander后，编译Matter EFR32固件会自动生成.ota文件，可用于OTA升级。
 - 在Ubuntu上更新和安装依赖软件包
 
@@ -75,7 +77,7 @@
 	```bash
 	./scripts/examples/gn_efr32_example.sh ./examples/lighting-app/efr32/ ./out/lighting-app BRD4186A
 	```
-	  
+	 编译完成后，固件chip-efr32-lighting-example.s37会生成在connectedhomeip/out/lighting-app/BRD4186A文件夹下。   
 	  
 	 开发者还可以通过一些编译选项打开或关闭相应的功能模块。例如，用以下命令编译出的固件关闭了debug log和二维码等功能,减小了code size。
 	 
@@ -92,15 +94,19 @@
 	``` 
   
 
+## 编译Bootloader固件
 
-
+ -  使用Simplicity Studio产生bootloader-storage-spiflash-single-1024k工程
+ 
+  ![Image](docs/spibootloader.png)
+  
+ - 采用默认配置编译bootloader-storage-spiflash-single-1024k工程
+ - 编译完成后，bootloader固件bootloader-storage-spiflash-single-1024k.s37将会生成在SimplicityStudio/v5_workspace/bootloader-storage-spiflash-single-1024k/GNU ARM v10.2.1 - Default文件夹下。
 
 
 ## 烧录固件
 
- 编译完成后，固件会生成在connectedhomeip/out/lighting-app/BRD4186A文件夹下。使用[Simplicity Studio](https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-building-and-flashing/flashing)将chip-efr32-lighting-example.s37文件和bootloader文件烧录到wstk板上，开发者可以通过Simplicity Studio编译bootloader固件，也可以直接使用pre-build bootloader固件。pre-build bootloader固件可以在connectedhomeip/third_party/efr32_sdk/repo/platform/bootloader/sample-apps/bootloader-storage-spiflash-single文件夹下找到。
- 
-烧录成功后LCD会显示Matter设备的二维码。
+ 使用[Simplicity Studio](https://docs.silabs.com/simplicity-studio-5-users-guide/5.3.0/ss-5-users-guide-building-and-flashing/flashing)将chip-efr32-lighting-example.s37文件和bootloader文件烧录到wstk板上。烧录成功后LCD会显示Matter设备的二维码。
  
   ![Image](docs/wstk.png)
 
@@ -128,8 +134,16 @@
 
 - 短按：切换灯的开关状态。
 
+**使用Chip Tool配网**: 
 
-通过Chip Tool发送如下命令也可以切换灯的开关状态。1为灯设备的Endpoint。详细步骤请参考[通过安装在OTBR上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+详细步骤请参考[通过安装在OTBR上的Matter Controller控制Matter Lighting设备](通过安装在OTBR上的MatterController控制MatterLighting设备.md)
+
+  ```bash
+./chip-tool pairing ble-thread (node id) hex:(operational dataset) (pin code) (discriminator)
+  ```
+**使用Chip Tool控制设备**: 
+
+通过Chip Tool发送如下命令切换灯的开关状态。1为灯设备的Endpoint。
 
   ```bash
 	chip-tool onoff on NodeID 1
