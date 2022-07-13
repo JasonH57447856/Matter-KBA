@@ -105,7 +105,7 @@
   将/etc/default/otbr-agent文件中的OTBR\_AGENT\_OPTS替换为
   
    ```bash
-    OTBR_AGENT_OPTS="-I wpan0 -B eth0 spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800 trel://eth0"
+    OTBR_AGENT_OPTS="-I wpan0 -B eth0 spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800?uart-flow-control trel://eth0"
   ``` 
   
    eth0为树莓派网络接口的名称，如果树莓派是通过wifi连接到局域网，则需要将eth0改为wlan0.
