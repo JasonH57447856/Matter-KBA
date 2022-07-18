@@ -7,7 +7,7 @@
 
 在Matter网络中，一般有三类设备是必须。分别是Matter Device，Matter Controller，OpenThread Board Router。
 
-![Image](Matter-KBA/docs/matter_topology.png)
+![Image](MatterKBA/docs/matter_topology.png)
 
 1. **Matter device**
   
