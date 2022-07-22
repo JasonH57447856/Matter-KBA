@@ -49,8 +49,7 @@
 
   ![Image](docs/build.png)
   
-  如果遇到错误，一般是由于网络不稳定，一些依赖软件包下载不完全导致。可尝试删除connectedhomeip目录重新下载。![image](https://user-images.githubusercontent.com/68582180/180405475-c3a05628-8657-45fc-b730-24c0ee19869a.png)
-
+  如果遇到错误，一般是由于网络不稳定，一些依赖软件包下载不完全导致。可尝试删除connectedhomeip目录重新下载。
   
 - 编译chip-tool
 
