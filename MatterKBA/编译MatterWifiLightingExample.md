@@ -100,5 +100,16 @@ Chip Tool和Matter Wifi Lighting设备需要加入同一个无线路由器，Chi
 	chip-tool onoff toggle NodeID 1
   ```
   
+## 通过RTT Viewer查看Matter设备的log
 
+- 下载并安装[RTT Viewer](https://www.segger.com/products/debug-probes/j-link/tools/rtt-viewer/)  
+
+- 按照下图配置RTT Viewer
+  
+   ![Image](docs/rtt_config.png)
+   
+- 点击“OK”后，显示如下log
+
+	![Image](docs/rtt_log.png)
+ 
 

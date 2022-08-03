@@ -151,6 +151,18 @@
 	chip-tool onoff toggle NodeID 1
   ```
   
+## 通过RTT Viewer查看Matter设备的log
+
+- 下载并安装[RTT Viewer](https://www.segger.com/products/debug-probes/j-link/tools/rtt-viewer/)  
+
+- 按照下图配置RTT Viewer
+  
+   ![Image](docs/rtt_config.png)
+   
+- 点击“OK”后，显示如下log
+
+	![Image](docs/rtt_log.png)
+ 
 ## 修改按键和led灯的GPIO
 
 可以通过修改connectedhomeip/third_party/silabs/matter_support/matter/efr32/efr32mg24/BRD4186A/config文件夹下相应的的配置文件来修改按键或led灯的gpio，例如sl_simple_led_led1_config.h为led1的配置文件。
