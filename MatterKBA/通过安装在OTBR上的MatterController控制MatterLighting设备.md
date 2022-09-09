@@ -35,7 +35,6 @@
 设备多次入网时，需要分配不同的node id， 否则会出现入网失败的问题。也可以通过以下命令清除chip tool的缓存。
 
   ```bash
-  cd connectedhomeip
   rm -r /tmp/chip_*
   ```  
   
